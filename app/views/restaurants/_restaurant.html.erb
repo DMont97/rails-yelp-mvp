@@ -1,0 +1,11 @@
+<li>
+  <%= link_to restaurant.name, restaurant_path(restaurant.id) %>
+  <% if params[:action] == "show" %>
+    <%= restaurant.address %>
+    <%= restaurant.phone_number %>
+    <% restaurant.reviews.each do |review| %>
+      <p><%= review.content %></p>
+    <% end %>
+  <% end %>
+</li>
+
