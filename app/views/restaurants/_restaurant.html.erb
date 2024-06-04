@@ -1,5 +1,5 @@
 <li>
-  <%= link_to restaurant.name, restaurant_path(restaurant.id) %>
+  <%= link_to restaurant.name, restaurant_path(restaurant.id), class: "text-decoration-none" %>
   <% if params[:action] == "show" %>
     <%= restaurant.address %>
     <%= restaurant.phone_number %>
@@ -8,4 +8,3 @@
     <% end %>
   <% end %>
 </li>
-
