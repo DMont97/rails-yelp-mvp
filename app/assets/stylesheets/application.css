@@ -13,3 +13,391 @@
  *= require_tree .
  *= require_self
  */
+ .navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 80px;
+}
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #670BFF;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #4D04C4;
+  color: white;
+}
+
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#167FFB, #0F60C4);
+  transition: background 0.3s ease;
+  border: 1px solid #0F60C4;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  color: white;
+}
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.avatar-large {
+  width: 56px;
+  border-radius: 50%;
+}
+
+.avatar-bordered {
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+}
+
+.avatar-square {
+  width: 40px;
+  border-radius: 0px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-condensed");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container2{
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+.card-slider {
+  display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin-top: 10px;
+  gap: 30px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card-slider::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.label-container2 {
+  display: flex;
+  align-items: center;
+}
+
+
+.label-container2 {
+  display: flex;
+  align-items: center;
+}
+
+.label-container2 h2 {
+  color: #111;
+  font-family: Poppins, serif;
+  margin-right: auto;
+  font-weight: 600;
+}
+
+.label-container2 .bi {
+  font-size: 18px;
+}
+
+.label-container2 button {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  color: #111;
+  cursor: pointer;
+  padding: 10px;
+  width: fit-content;
+  margin-left: 5px;
+}
+
+.label-container2 button:disabled {
+  background-color: whitesmoke;
+  cursor: not-allowed;
+  border: none;
+}
+
+.restaurant-card {
+  transition: transform 0.3s ease-in-out;
+  font-family: "Arial", sans-serif;
+  background: transparent;
+}
+
+.restaurant-card:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+.image-container2 {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container2 img {
+  width: 350px;
+  height: 240px;
+  display: block;
+  border-radius: 20px;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+
+.image-container2::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    border: none;
+    border-radius: 0 0 20px 20px;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1)100%);
+}
+
+.discount-badge {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 10px;
+  padding: 5px;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Proxima Nova Condensed", sans-serif;
+}
+
+.restaurant-name {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.rating {
+  display: flex;
+  align-items: start;
+  margin-top: 5px;
+  font-weight: semi-bold;
+}
+
+.review-count {
+  margin-left: 5px;
+  font-weight: semi-bold;
+}
+
+.delivery-info {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+}
+
+.bi-star-fill {
+  color: green;
+}
+
+.bi-dot {
+  font-size: 26px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .container2 {
+        max-width: 350px;
+        margin: auto;
+        padding: 10px;
+      }
+
+      /* Card Slider */
+
+      .label-container2 h2 {
+        color: #111;
+        font-family: Poppins, serif;
+        margin-right: auto;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .label-container2 i {
+        font-size: 14px;
+      }
+
+      /* Card Slider */
+
+      /* Restaurant Card */
+      .card-container2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+       .image-container2 img {
+        width: 180px;
+        height: 140px;
+        display: block;
+        border-radius: 20px;
+        object-fit: cover;
+        image-rendering: pixelated;
+      }
+
+      .image-container2::after {
+        content: "";
+        position: absolute;
+        top: 80%;
+        left: 0;
+        right: 0;
+        border: none;
+        border-radius: 0 0 20px 20px;
+        bottom: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.8) 100%
+        );
+      }
+
+      .discount-badge {
+        position: absolute;
+        color: #fff;
+        bottom: 0;
+        left: 10px;
+        padding: 5px;
+        z-index: 2;
+        font-weight: bold;
+        font-size: 12px;
+        font-family: "Proxima Nova Condensed", sans-serif;
+      }
+
+      .restaurant-name {
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0;
+      }
+
+      .info-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 10px;
+      }
+
+      .rating {
+        display: flex;
+        align-items: start;
+        margin-top: 3px;
+        font-weight: semi-bold;
+      }
+
+      .review-count {
+        margin-left: 3px;
+        font-weight: semi-bold;
+      }
+
+      p{
+        font-size: 10px;
+      }
+
+      .delivery-info {
+        display: flex;
+        font-size: 10px;
+        align-items: center;
+      }
+
+      .bi-dot {
+        font-size: 16px;
+      }
+      /* Restaurant Card */
+}
+
+
+@media (min-width: 576px) {
+  .container2 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container2 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container2 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container2 {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container2 {
+    max-width: 1320px;
+  }
+}

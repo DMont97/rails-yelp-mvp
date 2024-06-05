@@ -1,7 +1,7 @@
 <div class="container mt-4">
-  <h1>Restaurants</h1>
+  <h1><%= @restaurant.name %></h1>
   <%= render "restaurant", restaurant: @restaurant %>
   <%= render "reviews/form", restaurant: @restaurant, review: @review %>
-
+  <br>
   <%= link_to "Go Back", restaurants_path %>
 </div>
